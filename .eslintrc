@@ -1,0 +1,34 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "autofix", "react-hooks"],
+  "rules": {
+    "autofix/no-debugger": ["warn"],
+    "autofix/curly": ["warn"],
+    "autofix/eqeqeq": ["warn", "always", {"null": "ignore"}],
+    "autofix/no-lonely-if": ["warn"],
+    "autofix/no-var": ["warn"],
+    "autofix/prefer-const": ["warn"],
+    "autofix/no-useless-return": ["warn"],
+    "autofix/no-unused-vars": ["warn", {"vars": "all", "args": "none", "ignoreRestSiblings": true}],
+    "no-useless-catch": ["warn"],
+    "no-empty": ["warn"],
+    "no-unreachable": ["warn"],
+    "autofix/sort-imports": [
+      "warn",
+      {
+        "ignoreCase": false,
+        "ignoreDeclarationSort": true,
+        "ignoreMemberSort": false,
+        "allowSeparatedGroups": true
+      }
+    ],
+    "react-hooks/rules-of-hooks": ["warn"],
+    "react-hooks/exhaustive-deps": [
+      "warn",
+      {
+        "additionalHooks": "(useAuth)"
+      }
+    ]
+  }
+}
